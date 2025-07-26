@@ -1,5 +1,5 @@
 :root {
-    --link-color: #1c1d1e;
+    --link-color: #4f1bec;
     --background-color: #f8f9fa;
     --text-color: #212529;
 }
@@ -57,6 +57,121 @@ nav .right a span {
     margin-left: 5px;
 }
 
+
+/* SECTION1 - HERO section */
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin: 50px;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+.hero-section .text {
+    flex: 5;
+}
+.hero-section .head-shot{
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+.hero-section .text h2{
+    font-size: 50px;
+    
+}
+.hero-section .text .links{
+    margin-top: 25px;
+}
+.hero-section .text .links a{
+    display: inline-block;
+    padding: 5px 15px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
+}
+.hero-section .text .links a:hover {
+   border: solid 2px var(--text-color);
+    color: var(--text-color);
+}
+.hero-section .head-shot img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    
+}
+
+
+/* SECTION 2: Skills */
+.skills-section {
+    margin-bottom: 100px;
+    padding: 0 50px;
+}
+
+.skills-section h2{
+    text-align: center;
+    font-size: 40px;
+}
+.skills-section .text{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.skills-section .cells{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skills-section .cells .cell {
+    width: 200px;
+    padding: 10px 20px;
+    border: 1.5px solid lightgrey;
+    border-radius: 5px;
+    margin: 10px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-section .cells .cell img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+
+}
+
+.skills-section .cells .cell span{
+    font-size: 18px;
+}
+
+
+@media (max-width:850px){
+       /* SECTION 1 HERO */
+       .hero-section .text h2{
+        font-size: 35px;
+
+       }
+}
+@media (max-width:750px){
+       /* SECTION 1 HERO */
+       .hero-section{
+        font-size: 35px;
+        flex-direction: column-reverse;
+
+       }
+
+       .hero-section .head-shot img{
+        width: 300px;
+       }
+}  
+       
+
+
 @media (max-width: 600px) {
 
     /* NAVBAR */
@@ -75,7 +190,23 @@ nav .right a span {
     }
 
     nav .right a span {
-        display: nogitne;
+        display: none;
 
     }
+    /* SECTION 1: Hero */
+    .hero-section{
+        padding: 0 20px;
+    }
+    .hero-section .text h2 {
+        font-size: 30px;
+    }
+
+    /* SECTION 2: Skills */
+    .skills-section{
+        padding: 0 20px;
+    }
+    .skills-section .cells .cell span{
+        font-size: 16px;
+    }
+
 }
