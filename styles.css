@@ -410,3 +410,151 @@ nav .right a span {
     }
 
 }
+@media (max-width: 400px) {
+
+    /* NAVBAR */
+    nav {
+        padding: 0 10px;
+    }
+
+    nav .right a {
+        font-size: 20px;
+    }
+
+    nav .right a:last-child {
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
+
+    nav .right a span {
+        display: none;
+    }
+
+    /* SECTION 1: Hero */
+    .hero-section {
+        padding: 0 10px;
+    }
+
+    .hero-section .text h2 {
+        font-size: 25px;
+    }
+    .hero-section .head-shot img {
+        width: 250px;
+    }
+    /* SECTION 2: Skills */
+    .skills-section {
+        padding: 0 10px;
+    }
+    .skills-section .cells .cell {
+        width: 120px;
+    }
+    .skills-section .cells .cell span {
+        font-size: 14px;
+    }
+    /* SECTION 3: Projects */
+    .project-section {
+        padding: 0 10px;
+    }
+    .project-section .project-cells {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-section .project-cell {
+        width: 90%;
+        max-width: 350px;
+    }
+    .project-section .project-cell img {
+        width: 100%;
+        height: auto;
+    }
+    .project-section .project-cell a {
+        font-size: 16px;
+    }
+    .project-section .project-cell span {
+        font-size: 14px;
+    }
+    /* SECTION 4: Contact */
+    .contact-section {
+        padding: 0 10px;
+    }
+    .contact-section .group {
+        flex-direction: column;
+    }
+    .contact-section .group .text {
+        margin-bottom: 20px;
+    }
+    .contact-section .group form {
+        width: 100%;
+    }
+    .contact-section .group form input,
+    .contact-section .group form textarea {
+        width: 100%;
+    }
+    .contact-section .group form button {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-section .text {
+        text-align: center;
+    }
+    .hero-section .head-shot {
+        margin-top: 20px;
+    }
+    .hero-section .head-shot img {
+        width: 200px;
+    }
+    .skills-section .cells {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills-section .cells .cell {
+        width: 80%;
+        max-width: 300px;
+    }
+    .project-section .project-cells {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-section .project-cell {
+        width: 80%;
+        max-width: 350px;
+    }
+    .contact-section .group {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-section .group form {
+        width: 80%;
+        max-width: 400px;
+    }
+    .contact-section .group form input,
+    .contact-section .group form textarea {
+        width: 100%;
+    }
+    .contact-section .group form button {
+        width: 100%;
+    }
+    .contact-section .group .text {
+        text-align: center;
+    }
+    .contact-section .group .text h2 {
+        font-size: 30px;
+    }
+    .contact-section .group form input,
+    .contact-section .group form textarea {
+        font-size: 16px;
+    }
+    .contact-section .group form button {
+        font-size: 16px;
+    }
+    
+    
+}
