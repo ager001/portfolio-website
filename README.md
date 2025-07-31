@@ -19,7 +19,7 @@ Welcome to my personal portfolio website repository! This responsive and modern 
 
 ## 🚀 Demo
 
-🌍 Live Demo: *(Optional — add link if deployed via GitHub Pages or Netlify)*  
+🌍 Live Demo: *(https://688b456a8152984413683798--splendid-biscochitos-763a73.netlify.app/)*  
 📂 Repository: [GitHub Repository](https://github.com/ager001/portfolio-website)
 
 ---
